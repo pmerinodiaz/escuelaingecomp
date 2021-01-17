@@ -4,17 +4,17 @@
  * v. 1.0.
  * Diciembre, 2004.
  *
- * Copyright (C) 2004 por Héctor Díaz Díaz - Patricio Merino Díaz.
- * Escuela Ingeniería en Computación, Universidad de La Serena, Chile.
+ * Copyright (C) 2004 por HÃ©ctor DÃ­az DÃ­az - Patricio Merino DÃ­az.
+ * Escuela IngenierÃ­a en ComputaciÃ³n, Universidad de La Serena, Chile.
  * Todos los derechos reservados.
  *
- * No se asume ninguna  responsabilidad por el  uso o  alteración  de este software.
- * Este software se proporciona como es y sin garantía de ningún tipo de su funcionamiento
- * y en ningún caso será el autor responsable de daños o perjuicios que se deriven del mal
- * uso del software, aún cuando este haya sido notificado de la posibilidad de dicho daño.
+ * No se asume ninguna  responsabilidad por el  uso o  alteraciÃ³n  de este software.
+ * Este software se proporciona como es y sin garantÃ­a de ningÃºn tipo de su funcionamiento
+ * y en ningÃºn caso serÃ¡ el autor responsable de daÃ±os o perjuicios que se deriven del mal
+ * uso del software, aÃºn cuando este haya sido notificado de la posibilidad de dicho daÃ±o.
  *
- * Clase que contiene los métodos y variables enfocados a realizar una conexión a la base de
- * datos de tipo MySQL. En la conexión se utiliza al usuario 'escuelaingecomp' que fue creado para
+ * Clase que contiene los mÃ©todos y variables enfocados a realizar una conexiÃ³n a la base de
+ * datos de tipo MySQL. En la conexiÃ³n se utiliza al usuario 'escuelaingecomp' que fue creado para
  * administrar la base de datos 'escuelaingecomp'.
  */
 
@@ -24,7 +24,7 @@ class conexion
 	var $enlace;
 	
 	/**
-	 * Método constructor que no realiza ninguna tarea. Es usado solamente para instanciar a
+	 * MÃ©todo constructor que no realiza ninguna tarea. Es usado solamente para instanciar a
 	 * un objeto de la clase.
 	 */
 	function conexion()
@@ -32,37 +32,37 @@ class conexion
 	}
 	
 	/**
-	 * Método que retorna la conexión a la base de datos 'escuelaingecomp' de la Escuela IC.
-	 * En caso de que no se haya podido realizar la conexión en forma válida, no se retorna
+	 * MÃ©todo que retorna la conexiÃ³n a la base de datos 'escuelaingecomp' de la Escuela IC.
+	 * En caso de que no se haya podido realizar la conexiÃ³n en forma vÃ¡lida, no se retorna
 	 * varoles.
 	 *
 	 * @return $enlace El enlace a la base de datos.
 	 */
 	function conectar()
 	{
-		// Realizamos la conexión del usuario 'u190876680_comp' al host 'localhost'.
-		$this->enlace = mysql_connect("localhost", "escuelaingecomp", "masterkey");
+		// Realizamos la conexiÃ³n del usuario 'user' al host 'localhost'.
+		$this->enlace = mysql_connect("localhost", "user", "pwd");
 		
 		// Cuando el usuario 'escuelaingecomp' no pudo conectarse al host 'localhost'.
 		if (!$this->enlace)
 		{
-			printf("<P CLASS='contenido'>Conexi&oacute;n del usuario <B>escuelacomp</B> al servidor <B>localhost</B> no efectuada.</P>");
+			printf("<P CLASS='contenido'>Conexi&oacute;n del usuario <B>user</B> al servidor <B>localhost</B> no efectuada.</P>");
 	  	exit();
 		}
 		
-		// Cuando el enlace a la base de datos 'escuelaingecomp' no es factible.
-		if (!mysql_select_db("escuelaingecomp", $this->enlace))
+		// Cuando el enlace a la base de datos 'bd' no es factible.
+		if (!mysql_select_db("bd", $this->enlace))
 		{
 			printf("<P CLASS='contenido'>Conexi&oacute;n a la base de datos <B>escuelaingecomp</B> no efectuada.</P>");
 			exit();
 		}
 		
-		// Retornamos la conexión efectuada.
+		// Retornamos la conexiÃ³n efectuada.
 		return $this->enlace;
 	}
 	
 	/**
-	 * Método que desconecta el enlace de la base de datos 'escuelaingecomp'.
+	 * MÃ©todo que desconecta el enlace de la base de datos 'escuelaingecomp'.
 	 */
 	function desconectar()
 	{
