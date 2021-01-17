@@ -1,0 +1,52 @@
+/* Para textfield de formularios */
+.formtextfield {
+font-size:11px;
+font-family:Arial,Helvetica,sans-serif;
+height:20px;
+width:80%;
+}
+/* Para option de formularios */
+.formlist {
+font-size:11px;
+font-family:Arial,Helvetica,sans-serif;
+height:20px;
+width:80%;
+}
+/* Para textarea de formularios */
+.formtextarea {
+font-size:11px;
+font-family:Arial,Helvetica,sans-serif;
+width:80%;
+}
+/* Para button de formularios */
+.formbutton {
+color:#FFFFFF;
+font-size:11px;
+font-family:Arial,Helvetica,sans-serif;
+font-weight:bold;
+border-bottom:#000000 1px groove;
+border-right:#000000 1px groove;
+background-color:#6699CC;
+}
+/* Para label de formularios */
+.formlabel {
+font-size:10px;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+padding-left:10px;
+font-weight:bold;
+}
+/* Para titulo de formularios */
+.formtitulo {
+color:#000000;
+font-size:13px;
+font-family:Arial,Helvetica,sans-serif;
+font-weight:bold;
+padding-left:10px;
+background-color:#DCDCCC;
+}
+/* Para botones intermedios en los formularios */
+.formbuttoninter {
+font-size:11px;
+font-family:Arial,Helvetica,sans-serif;
+height:20px;
+}

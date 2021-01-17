@@ -1,0 +1,21 @@
+/* Para pequeños comentarios o notas */
+.detalle {
+font-size:10.5px;
+font-family:Arial,Helvetica,sans-serif;
+}
+.detalle a:link {
+color:#0000FF;
+text-decoration:none;
+}
+.detalle a:visited {
+color:#800040;
+text-decoration:none;
+}
+.detalle a:active {
+color:#CC0000;
+text-decoration:none;
+}
+.detalle a:hover {
+color:#CC0000;
+text-decoration:underline;
+}

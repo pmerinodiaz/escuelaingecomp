@@ -1,0 +1,77 @@
+/* Tabla principal */
+.mainTable {
+background-color:#FFFFFF;
+border:1px solid #003366;
+}
+/* Fila del mes y año */
+.monthYearRow {
+line-height:17pt;
+background-color:#FFFFFF;
+text-align:center;
+vertical-align:middle;
+background-image:url(bgmes.gif);
+}
+/* Texto del mes y año */
+.monthYearText {
+font-family:Geneva,Verdana,Arial,sans-serif;
+font-size:13px;
+font-weight:bold;
+color:#252216;
+}
+/* Fila del nombre de los días */
+.dayNamesRow {
+line-height:11pt;
+background-color:#F5F4D3;
+text-align:center;
+vertical-align:middle;
+}
+/* Texto del nombre de los días */
+.dayNamesText {
+font-family:Geneva,Verdana,Arial,sans-serif;
+font-size:10px;
+font-weight:bold;
+color:#433D27;
+background-color:#F6F5D7;
+}
+/* Fila de las fechas */
+.rows {
+font-family:Geneva,Verdana,Arial,sans-serif;
+font-size:10px;
+color:#433D27;
+line-height:15pt;
+text-align:center;
+vertical-align:middle;
+}
+/* Fecha actual */
+.today {
+color:#CF0000;
+}
+/* Ventanita popup*/
+.oLib {
+font-family:Geneva,Verdana,Arial,sans-serif;
+font-size:10px;
+}
+/* Fondo para celdas normales */
+.s2 {
+background-color:#EEEEEE;
+}
+/* Fondo para celdas iguales */
+.s20 {
+background-color:#EBEBEB;
+}
+/* Fondo para celdas de marca inicial */
+.s21 {
+background-color:#F5E0D8;
+}
+/* Fondo para celdas de marca solida */
+.s22 {
+background-color:#F5E0D8;
+}
+/* Fondo para celdas de marca final */
+.s23 {
+background-color:#F5E0D8;
+}
+/* Fondo para celdas de inicio y final */
+.s24 {
+background-color:#F5E0D8;
+}

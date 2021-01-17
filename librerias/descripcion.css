@@ -1,0 +1,22 @@
+/* La descripción de la página actual */
+.descripcion {
+font-size:12px;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+line-height:150%;
+}
+.descripcion a:link {
+color:#0000FF;
+text-decoration:none;
+}
+.descripcion a:visited {
+color:#800040;
+text-decoration:none;
+}
+.descripcion a:active {
+color:#CC0000;
+text-decoration:none;
+}
+.descripcion a:hover {
+color:#CC0000;
+text-decoration:underline;
+}
